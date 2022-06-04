@@ -11,6 +11,8 @@ const commands = [
             option.setName('vc')
                 .setDescription('Select a voice channel! (if you dont see it, enter its name)')
                 .setRequired(true)),
+    new SlashCommandBuilder().setName('wiki').setDescription('Everything you need to know about the turtles!'),
+    new SlashCommandBuilder().setName('suggestion').setDescription('You have an idea for a command? Share it with the creator of Tutel!'),
 ]
 .map(command => command.toJSON());
 
