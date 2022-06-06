@@ -75,7 +75,7 @@ async function runtutel(voiceChannel) {
 client.on("voiceStateUpdate", (oldState, newState) => {
 	if (newState.member.user.bot) return;
 	if (config.JOIN_AUTOMATICALLY && oldState.channel == null && newState.channel != null) {
-		runBen(newState.channel);
+		runtutel(newState.channel);
 	if (oldState.channelID !==  oldState.guild.me.voice.channelID || newState.channel)
 		return;
 	}
